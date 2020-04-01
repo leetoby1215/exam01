@@ -237,4 +237,5 @@ BUILD/K66F/GCC_ARM/main.o: main.cpp BUILD/K66F/GCC_ARM/mbed_config.h \
  /home/ee2405/ee2405/mbed-os/platform/mbed_stats.h \
  /home/ee2405/ee2405/mbed-os/platform/Callback.h \
  /home/ee2405/ee2405/mbed-os/platform/FunctionPointer.h \
- /home/ee2405/ee2405/mbed-os/platform/ScopedLock.h
+ /home/ee2405/ee2405/mbed-os/platform/ScopedLock.h \
+ 4DGL-uLCD-SE/uLCD_4DGL.h
