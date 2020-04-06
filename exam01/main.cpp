@@ -3,8 +3,8 @@
 #define sample 128
 
 Serial pc(USBTX, USBRX);
-uLCD_4DGL uLCD(D1, D0, D2);
 AnalogOut Aout(DAC0_OUT);
+//uLCD_4DGL uLCD(D1, D0, D2);
 InterruptIn btn(SW3);
 EventQueue queue1(32 * EVENTS_EVENT_SIZE);
 
@@ -30,10 +30,10 @@ int main() {
     thread1.start(callback(&queue1, &EventQueue::dispatch_forever));
     btn.fall(&btn_fall);
 
-    uLCD.printf("107061144\n");
+    /*uLCD.printf("107061144\n");
     for (int y = 32; y < 96; y++) {
         uLCD.line(32, y , 96, y, WHITE);
-    }
+    }*/
 
     while (true) {
         for (int i = 0; i < 10; i++) {
